@@ -44,7 +44,7 @@ export default function Calculator() {
       digits.push(
         <button
           onClick={() => upDateCalc(i.toString())}
-          className="flex justify-center items-center bg-blue-800 p-4 flex-1 hover:opacity-90"
+          className="flex justify-center items-center text-white bg-blue-800 p-4 flex-1 hover:opacity-90"
           key={i}
         >
           {i}

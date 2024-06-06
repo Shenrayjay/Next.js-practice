@@ -5,7 +5,7 @@ import { FaGithub } from "react-icons/fa6";
 export default function Navbar() {
   return (
     <>
-      <div className="navbar bg-base-100 h-16">
+      <div className="navbar bg-neutral h-16">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -29,48 +29,68 @@ export default function Navbar() {
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-                <Link href="/sideProject">代辦事項</Link>
+                <Link href="/sideProject" className="text-white">
+                  代辦事項
+                </Link>
               </li>
               <li>
-                <Link href="/sideProject/calendar">月曆</Link>
+                <Link href="/sideProject/calendar" className="text-white">
+                  月曆
+                </Link>
               </li>
               <li>
-                <Link href="/sideProject/calculator">簡易計算機</Link>
+                <Link href="/sideProject/calculator" className="text-white">
+                  簡易計算機
+                </Link>
               </li>
               <li>
-                <Link href="/sideProject/stopwatch">簡易碼錶</Link>
+                <Link href="/sideProject/stopwatch" className="text-white">
+                  簡易碼錶
+                </Link>
               </li>
               <li>
-                <Link href="/sideProject/clock">電子時鐘</Link>
+                <Link href="/sideProject/clock" className="text-white">
+                  電子時鐘
+                </Link>
               </li>
             </ul>
           </div>
-          <Link href="/" className="btn btn-ghost text-xl">
+          <Link href="/" className="btn btn-ghost text-xl text-white">
             首頁
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <Link href="/sideProject">代辦事項</Link>
+              <Link href="/sideProject" className="text-white">
+                代辦事項
+              </Link>
             </li>
             <li>
-              <Link href="/sideProject/calendar">月曆</Link>
+              <Link href="/sideProject/calendar" className="text-white">
+                月曆
+              </Link>
             </li>
             <li>
-              <Link href="/sideProject/calculator">簡易計算機</Link>
+              <Link href="/sideProject/calculator" className="text-white">
+                簡易計算機
+              </Link>
             </li>
             <li>
-              <Link href="/sideProject/stopwatch">簡易碼錶</Link>
+              <Link href="/sideProject/stopwatch" className="text-white">
+                簡易碼錶
+              </Link>
             </li>
             <li>
-              <Link href="/sideProject/clock">電子時鐘</Link>
+              <Link href="/sideProject/clock" className="text-white">
+                電子時鐘
+              </Link>
             </li>
           </ul>
         </div>
         <div className="navbar-end">
           <Link href="https://github.com/Shenrayjay">
-            <FaGithub className="text-2xl mr-4" />
+            <FaGithub className="text-2xl mr-4 text-white" />
           </Link>
         </div>
       </div>

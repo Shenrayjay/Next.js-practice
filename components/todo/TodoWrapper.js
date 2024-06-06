@@ -45,7 +45,7 @@ export default function TodoWrapper() {
 
   return (
     <div className="flex flex-col justify-center items-center  gap-5 border border-x-white rounded-xl p-11">
-      <h1 className="text-2xl">代辦事項</h1>
+      <h1 className="text-2xl text-white">代辦事項</h1>
       <TodoForm addTodo={addTodo} />
       {todos.map((todo, index) =>
         todo.isEditing ? (

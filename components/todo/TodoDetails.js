@@ -9,7 +9,7 @@ export default function TodoDetails({
   editTodo,
 }) {
   return (
-    <div className="w-80 flex justify-between items-center px-2 py-2 border border-white rounded-xl mb-4 cursor-pointer ">
+    <div className="w-80 flex justify-between items-center px-2 py-2 border border-white rounded-xl mb-4 cursor-pointer text-white">
       <p
         onClick={() => toggleComplete(task.id)}
         className={`${task.completed ? "line-through text-gray-500" : ""}`}
@@ -17,8 +17,11 @@ export default function TodoDetails({
         {task.task}
       </p>
       <div className="flex gap-2">
-        <FaFilePen onClick={() => editTodo(task.id)} />
-        <FaTrashAlt onClick={() => deleteTodo(task.id)} />
+        <FaFilePen className="text-white" onClick={() => editTodo(task.id)} />
+        <FaTrashAlt
+          className="text-white"
+          onClick={() => deleteTodo(task.id)}
+        />
       </div>
     </div>
   );

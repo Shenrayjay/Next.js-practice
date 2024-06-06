@@ -16,7 +16,7 @@ export default function EditTodoForm({ editTodo, task }) {
       <form onSubmit={handleSubmit}>
         <input
           type="text"
-          className="bg-black border border-white p-2 w-72 "
+          className="bg-black border border-white p-2 w-72 text-white"
           placeholder="編輯代辦事項"
           value={value}
           onChange={(e) => setValue(e.target.value)}

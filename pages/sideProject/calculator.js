@@ -44,7 +44,7 @@ export default function Calculator() {
       digits.push(
         <button
           onClick={() => upDateCalc(i.toString())}
-          className="flex justify-center items-center text-black bg-blue-800 p-4 flex-1 hover:opacity-90"
+          className="flex justify-center items-center text-white bg-blue-800 p-4 flex-1 hover:opacity-90"
           key={i}
         >
           {i}
@@ -56,9 +56,9 @@ export default function Calculator() {
   return (
     <>
       <Navbar />
-      <div className="flex flex-col justify-center items-center h-[calc(100vh-64px)]">
+      <div className="flex flex-col justify-center items-center h-[calc(100vh-64px)] bg-black">
         <div className="w-full max-w-96 bg-white rounded-xl overflow-hidden">
-          <div className="p-4  text-right  text-2xl font-light bg-blue-800">
+          <div className="p-4  text-right  text-2xl font-light bg-blue-800 text-white">
             {result ? (
               <span className="text-sm text-gray-500">({result})</span>
             ) : (
@@ -69,37 +69,37 @@ export default function Calculator() {
           <div className="flex">
             <button
               onClick={() => upDateCalc("/")}
-              className="p-4 cursor-pointer transition duration-500 hover:opacity-90 flex-1 bg-pink-500 flex justify-center items-center"
+              className="p-4 cursor-pointer text-white transition duration-500 hover:opacity-90 flex-1 bg-pink-500 flex justify-center items-center"
             >
               /
             </button>
             <button
               onClick={() => upDateCalc("*")}
-              className="p-4 cursor-pointer transition duration-500 hover:opacity-90 flex-1 bg-pink-500 flex justify-center items-center"
+              className="p-4 cursor-pointer text-white transition duration-500 hover:opacity-90 flex-1 bg-pink-500 flex justify-center items-center"
             >
               *
             </button>
             <button
               onClick={() => upDateCalc("+")}
-              className="p-4 cursor-pointer transition duration-500 hover:opacity-90 flex-1 bg-pink-500 flex justify-center items-center"
+              className="p-4 cursor-pointer text-white transition duration-500 hover:opacity-90 flex-1 bg-pink-500 flex justify-center items-center"
             >
               +
             </button>
             <button
               onClick={() => upDateCalc("-")}
-              className="p-4 cursor-pointer transition duration-500 hover:opacity-90 flex-1 bg-pink-500 flex justify-center items-center"
+              className="p-4 cursor-pointer text-white transition duration-500 hover:opacity-90 flex-1 bg-pink-500 flex justify-center items-center"
             >
               -
             </button>
             <button
               onClick={deleteCalc}
-              className="p-4 cursor-pointer transition duration-500 hover:opacity-90 flex-1 bg-pink-500 flex justify-center items-center"
+              className="p-4 cursor-pointer text-white transition duration-500 hover:opacity-90 flex-1 bg-pink-500 flex justify-center items-center"
             >
               DEL
             </button>
             <button
               onClick={backToZero}
-              className="p-4 cursor-pointer transition duration-500 hover:opacity-90 flex-1 bg-pink-500 flex justify-center items-center"
+              className="p-4 cursor-pointer text-white transition duration-500 hover:opacity-90 flex-1 bg-pink-500 flex justify-center items-center"
             >
               AC
             </button>
@@ -108,19 +108,19 @@ export default function Calculator() {
             {createDigits()}
             <button
               onClick={() => upDateCalc("0")}
-              className="flex justify-center items-center bg-blue-800 p-4 flex-1 hover:opacity-90"
+              className="flex justify-center items-center text-white bg-blue-800 p-4 flex-1 hover:opacity-90"
             >
               0
             </button>
             <button
               onClick={() => upDateCalc(".")}
-              className="flex justify-center items-center bg-blue-800 p-4 flex-1 hover:opacity-90"
+              className="flex justify-center items-center text-white bg-blue-800 p-4 flex-1 hover:opacity-90"
             >
               .
             </button>
             <button
               onClick={calculate}
-              className="flex justify-center items-center bg-blue-800 p-4 flex-1 hover:opacity-90"
+              className="flex justify-center items-center text-white bg-blue-800 p-4 flex-1 hover:opacity-90"
             >
               =
             </button>

@@ -110,7 +110,7 @@ export default function TripCalendar() {
       <div className="min-h-[calc(100vh-200px)] flex flex-col justify-center items-center bg-black mb-5">
         <div className="flex justify-center items-center gap-12 mb-2 mt-2">
           <button
-            className="text-3xl hover:text-[#a0ff1f]"
+            className="text-3xl hover:text-[#a0ff1f] text-white"
             onClick={() =>
               setCurrentDate(
                 new Date(currentDate.getFullYear(), currentDate.getMonth() - 1)
@@ -119,11 +119,11 @@ export default function TripCalendar() {
           >
             <FaArrowAltCircleLeft />
           </button>
-          <p className="text-2xl">
+          <p className="text-2xl text-white">
             {`${currentDate.getFullYear()}/${currentDate.getMonth() + 1}`}
           </p>
           <button
-            className="text-3xl hover:text-[#a0ff1f]"
+            className="text-3xl hover:text-[#a0ff1f] text-white"
             onClick={() =>
               setCurrentDate(
                 new Date(currentDate.getFullYear(), currentDate.getMonth() + 1)

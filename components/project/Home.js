@@ -4,8 +4,8 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="flex flex-col gap-10 justify-center items-center  h-[calc(100vh-64px)]">
-      <h1 className="text-lg">
-        這裡是幾個我以Next.js、Tailwind和dasiyUI所製作出來的簡易功能
+      <h1 className="text-lg text-white">
+        這裡是幾個我以Next.js、tailwind和dasiyUI所製作出來的簡易功能
       </h1>
       <div className="flex flex-col gap-5">
         <Link href="/sideProject" className="btn btn-accent">
